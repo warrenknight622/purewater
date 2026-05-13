@@ -1,168 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>PureWater</title>
-
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #111;
-}
-
-/* HEADER */
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background: white;
-  border-bottom: 1px solid #eee;
-  position: sticky;
-  top: 0;
-}
-
-nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #111;
-  font-weight: bold;
-}
-
-/* HERO */
-.hero {
-  height: 90vh;
-  background: url('https://images.unsplash.com/photo-1502741338009-cac2772e18bc') center/cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 60px;
-  color: white;
-}
-
-.hero h1 {
-  font-size: 60px;
-  margin: 0;
-}
-
-.hero button {
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #00aaff;
-  border: none;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-/* PRODUCTS */
-.products {
-  padding: 60px;
-  text-align: center;
-}
-
-.grid {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.card {
-  width: 250px;
-  border: 1px solid #eee;
-  padding: 20px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card img {
-  width: 100%;
-}
-
-/* MISSION */
-.mission {
-  background: #f7f7f7;
-  padding: 60px;
-  text-align: center;
-}
-
-/* FOOTER */
-footer {
-  background: #0a2540;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <title>PureFlow Water</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h2>PureWater</h2>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#products">Shop</a>
-    <a href="#mission">Mission</a>
-  </nav>
+    <h1>PureFlow</h1>
+    <p>Clean Water. Anywhere. Anytime.</p>
 </header>
 
-<section class="hero">
-  <h1>Clean Water Anywhere</h1>
-  <p>Portable filtration for travel, outdoor, and emergencies</p>
-  <button onclick="shopNow()">Shop Now</button>
-</section>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">Our Mission</a>
+    <a href="services.html">Products</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
-<section id="products" class="products">
-  <h2>Featured Products</h2>
-  <div class="grid">
+<main>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8">
-      <h3>Filter Straw</h3>
-      <p>$19.99</p>
-      <button onclick="buy('Straw')">Buy</button>
-    </div>
+    <section class="hero">
+        <h2>Safe Water for Everyone</h2>
+        <p>Innovative filtration solutions designed for travel, survival, and global impact.</p>
+        <button>Shop Now</button>
+    </section>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074">
-      <h3>Filter Bottle</h3>
-      <p>$39.99</p>
-      <button onclick="buy('Bottle')">Buy</button>
-    </div>
+    <section>
+        <h2>Why PureFlow?</h2>
+        <div class="features">
+            <div>
+                <h3>Advanced Filtration</h3>
+                <p>Removes 99.9% of bacteria and contaminants.</p>
+            </div>
+            <div>
+                <h3>Eco-Friendly</h3>
+                <p>No plastic waste. Sustainable design.</p>
+            </div>
+            <div>
+                <h3>Global Impact</h3>
+                <p>Every purchase provides clean water to communities in need.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1561047029-3000c68339ca">
-      <h3>Home Pitcher</h3>
-      <p>$49.99</p>
-      <button onclick="buy('Pitcher')">Buy</button>
-    </div>
-
-  </div>
-</section>
-
-<section id="mission" class="mission">
-  <h2>Our Mission</h2>
-  <p>Every purchase helps provide clean drinking water worldwide.</p>
-</section>
+</main>
 
 <footer>
-  <p>© 2026 PureWater</p>
+    <p>Follow us on Instagram | LinkedIn | X</p>
+    <p>© 2026 PureFlow Water</p>
 </footer>
-
-<script>
-function shopNow() {
-  document.getElementById("products").scrollIntoView({ behavior: "smooth" });
-}
-
-function buy(product) {
-  alert(product + " added to cart (demo)");
-}
-</script>
 
 </body>
 </html>
